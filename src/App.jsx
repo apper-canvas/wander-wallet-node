@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import getIcon from './utils/iconUtils.jsx';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
+import Flights from './pages/Flights';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -49,6 +50,7 @@ function App() {
       
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/flights" element={<Flights />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       

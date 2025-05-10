@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import getIcon from '../utils/iconUtils.jsx';
+import getIcon from '../utils/iconUtils.jsx'; 
 import MainFeature from '../components/MainFeature';
 
 export default function Home() {
@@ -86,7 +86,7 @@ export default function Home() {
               <span className="text-white font-bold text-2xl">WanderWallet</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-white hover:text-surface-100 font-medium">Explore</a>
+              <a href="/flights" className="text-white hover:text-surface-100 font-medium">Flights</a>
               <a href="#" className="text-white hover:text-surface-100 font-medium">Bookings</a>
               <a href="#" className="text-white hover:text-surface-100 font-medium">Destinations</a>
               <a href="#" className="text-white hover:text-surface-100 font-medium">Deals</a>
@@ -254,7 +254,7 @@ export default function Home() {
               <h4 className="font-bold text-lg mb-4">Explore</h4>
               <ul className="space-y-2">
                 <li><a href="#" className="text-surface-600 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">Destinations</a></li>
-                <li><a href="#" className="text-surface-600 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">Flights</a></li>
+                <li><a href="/flights" className="text-surface-600 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">Flights</a></li>
                 <li><a href="#" className="text-surface-600 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">Hotels</a></li>
                 <li><a href="#" className="text-surface-600 dark:text-surface-300 hover:text-primary dark:hover:text-primary-light">Car Rentals</a></li>
               </ul>

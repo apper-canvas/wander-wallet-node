@@ -1,6 +1,7 @@
 import getIcon from '../utils/iconUtils.jsx';
 import { toast } from 'react-toastify';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function MainFeature() {
   // Icon declarations
@@ -11,6 +12,7 @@ export default function MainFeature() {
   const PlusIcon = getIcon("Plus");
   const MinusIcon = getIcon("Minus");
   const AdjustmentsIcon = getIcon("Settings2");
+  const LoaderIcon = getIcon("Loader2");
   const LoaderIcon = getIcon("Loader2");
   
   // Form state
@@ -23,6 +25,7 @@ export default function MainFeature() {
   
   const [isSearching, setIsSearching] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
+  const navigate = useNavigate();
   const [favorites, setFavorites] = useState([]);
   
   // Popular destinations
@@ -86,6 +89,12 @@ export default function MainFeature() {
       setFavorites([...favorites, destination.id]);
       toast.success(`Added ${destination.name} to favorites`);
     }
+
+  // Navigate to dedicated pages
+  const navigateToFlights = () => {
+    toast.info("Navigating to Flights search page");
+    navigate('/flights');
+  };
   };
   
   // Load favorites from localStorage
@@ -114,7 +123,7 @@ export default function MainFeature() {
               Where to?
             </label>
             <div className="relative">
-              <MapPinIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-surface-400" size={18} />
+          <div onClick={navigateToFlights} className="card card-hover flex flex-col items-center justify-center p-6 cursor-pointer">
               <input
                 type="text"
                 id="destination"
