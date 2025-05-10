@@ -1,6 +1,5 @@
 import getIcon from '../utils/iconUtils.jsx';
 import { toast } from 'react-toastify';
-import getIcon from '../utils/iconUtils';
 
 export default function MainFeature() {
   // Icon declarations
