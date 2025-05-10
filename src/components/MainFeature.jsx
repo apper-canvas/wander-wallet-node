@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import getIcon from '../utils/iconUtils.jsx';
 import { toast } from 'react-toastify';
 import getIcon from '../utils/iconUtils';
 

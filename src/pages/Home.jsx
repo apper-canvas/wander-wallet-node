@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
-import getIcon from '../utils/iconUtils';
+import getIcon from '../utils/iconUtils.jsx';
 import MainFeature from '../components/MainFeature';
 
 export default function Home() {

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import getIcon from '../utils/iconUtils';
+import getIcon from '../utils/iconUtils.jsx';
 
 export default function NotFound() {
   const HomeIcon = getIcon("Home");
