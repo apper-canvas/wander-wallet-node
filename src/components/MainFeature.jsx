@@ -14,7 +14,6 @@ export default function MainFeature() {
   const AdjustmentsIcon = getIcon("Settings2");
   const LoaderIcon = getIcon("Loader2");
   const LoaderIcon = getIcon("Loader2");
-  
   // Form state
   const [searchParams, setSearchParams] = useState({
     destination: '',
